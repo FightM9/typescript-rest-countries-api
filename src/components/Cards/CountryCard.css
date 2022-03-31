@@ -1,0 +1,25 @@
+.card {
+  border-radius: var(--border-radius);
+  background-color: var(--color-card-bg);
+  box-shadow: var(--color-shadow);
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+  overflow: hidden;
+}
+h3 {
+  text-decoration: none;
+}
+
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.card-body {
+  padding: 1rem 1.5rem 2rem;
+}

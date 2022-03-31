@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Country from "./pages/Country/Country";
+import CountryDetails from "./pages/CountryDetails/CountryDetails";
+import NotFound from "./pages/NotFound";
+import { fetchCounries } from "./store/reducer/countriesSlice";
 
-function App() {
+export default function App() {
+  const dispatch = useDispatch();
+
+  // Get and save data about countries using the REST Countries API
+  useEffect(() => {
+    dispatch(fetchCounries());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Country />} />
+        <Route path="country/:name" element={<CountryDetails />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;
