@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+    text-transform: capitalize;
+}
+
+.container a {
+    color: var(--color-text);
+}
+
+.container > * {
+    position: relative;
+}
+
+.container > :last-child {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.container > ::before {
+    position: absolute;
+    display: block;
+    content: '/';
+    right: -0.8rem;   
+}
+
+.container > :last-child::before {
+    display: none;
+    
+}
+
+.container:last-child {
+    opacity: 0.1;
+}

@@ -1,8 +1,12 @@
-import "./Spinner.css";
+import styles from  './Spinner.module.css';
+
+/**
+ * Loading indicator in the center of the screen
+ */
 
 function Spinner() {
   return (
-    <div className="spinner-ripple">
+    <div className={styles.spinner_ripple}>
       <div></div>
       <div></div>
     </div>

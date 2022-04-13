@@ -1,0 +1,80 @@
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  width: 100%;
+  padding: 1.4rem;
+  margin-bottom: 24px;
+  background-color: var(--color-card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--color-shadow);
+}
+
+/* Option */
+
+.sort_option {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sort_option_sort {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
+}
+
+.sort_option_order {
+  display: flex;
+  align-items: center;
+}
+
+.btn_order {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_order .btn_icon_asc {
+  transform: scaleY(-1);
+}
+
+/* View mode */
+
+.view {
+  display: flex;
+  align-items: center;
+}
+
+.view_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.16rem;
+  cursor: pointer;
+}
+
+.view input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.view_icon {
+  font-size: 1rem;
+  opacity: 0.4;
+  transition: opacity .1s ease-in-out;
+}
+
+input:checked+.view_icon {
+  opacity: 1;
+}

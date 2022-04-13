@@ -1,0 +1,53 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.filters input[type='reset'] {
+    padding: 0.6rem; 
+    margin-top: 1em;
+    color: white;
+    background-color: var(--color-primary);   
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filters input[type='reset']:hover {
+    opacity: 0.9;
+}
+
+.filter_search {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--color-shadow);
+}
+
+.filters_groupe {
+    display: grid;
+    gap: 1.4rem;
+    padding: 1.4rem;
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--color-shadow);
+}
+
+.filter_item {
+    display: grid;
+    gap: 1rem;
+}
+
+.filter_title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.filter_title_unit {
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+

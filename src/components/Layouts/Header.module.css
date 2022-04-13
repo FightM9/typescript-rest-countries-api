@@ -1,0 +1,20 @@
+.header {
+  margin-bottom: 4rem;
+  box-shadow: var(--color-shadow);
+  background-color: var(--colors-ui-base);
+}
+
+.header_wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--color-text);
+}
+
+.title {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  font-weight: 800;
+}

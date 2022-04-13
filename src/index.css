@@ -1,14 +1,6 @@
 @import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
 :root {
   /* Typography */
   --font-family: 'Nunito Sans', sans-serif;
@@ -20,22 +12,24 @@ a {
 
   /* Other */
   --border-radius: 0.5rem;
+  --card-padding: 1rem;
 }
 
-body[data-theme='dark'] {
-  --color-text: #ffffff;
-  --color-bg: #202c37;
-  --color-header-bg: #2b3945;
-  --color-card-bg: #2b3945;
-  --color-shadow: #0b10147a 0 0 8px;
+html {
+  /* Remove scrollbar padding  */
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+  min-width: 375px;
 }
-body[data-theme='light'] {
-  --color-text: #111517;
-  --color-bg: #fafafa;
-  --color-header-bg: #ffffff;
-  --color-card-bg: #ffffff;
-  --color-shadow: #959da533 0px 8px 24px;
+
+* {
+  box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
 
 body {
   margin: 0;
@@ -43,4 +37,37 @@ body {
   color: var(--color-text);
   font-weight: var(--font-weight-light);
   background-color: var(--color-bg);
+  outline-color: var(--color-primary);
+}
+
+body[data-theme='dark'] {
+  --color-primary: #2684ff;
+  --color-text: #ffffff;
+  --color-bg: #202c37;
+  --color-header-bg: #2b3945;
+  --color-card-bg: #2b3945;
+  --color-shadow: #0b10147a 0 0 8px;
+  --color-border: #475e72;
+}
+
+body[data-theme='light'] {
+  --color-primary: #2684ff;
+  --color-text: #111517;
+  --color-bg: #fafafa;
+  --color-header-bg: #ffffff;
+  --color-card-bg: #ffffff;
+  --color-shadow: #959da533 0px 8px 24px;
+  --color-border: #c9d7e4;
+}
+
+/* Helper */
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

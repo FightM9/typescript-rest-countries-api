@@ -1,22 +1,21 @@
-import { IoSearch } from "react-icons/io5";
-import { useDispatch, useSelector } from "react-redux";
-import { setSearch } from "../../store/reducer/searchReduser";
-import './SearchInput.css'
+import { MdSearch } from 'react-icons/md';
+import styles from './SearchInput.module.css';
 
-function SearchInput() {
-  const dispatch = useDispatch();
-  // @ts-ignore
-  const searchValue = useSelector((state) => state.search)
+interface SearchInputProps {
+  value: string,
+  onChangeValue: (params:string)=> void
+}
 
+function SearchInput({ value, onChangeValue }: SearchInputProps) {
   return (
-    <div className="search">
-      <IoSearch />
+    <div  className={styles.search}>
+      <MdSearch />
       <input
-        className="search-input"
+        className={styles.search_input}
         type='search'
-        value={searchValue}
-        placeholder="Search for a country..."        
-        onChange={(e) => dispatch(setSearch(e.currentTarget.value))}
+        value={value}
+        placeholder='Search for a country...'
+        onChange={e => onChangeValue(e.target.value)}
       />
     </div>
   );

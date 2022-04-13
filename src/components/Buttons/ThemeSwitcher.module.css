@@ -1,0 +1,12 @@
+.theme_switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 8px;
+    font-size: var(--font-size-sm);
+    text-transform: capitalize;
+    color: var(--colors-text);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

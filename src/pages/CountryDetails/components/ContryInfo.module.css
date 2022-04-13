@@ -1,0 +1,113 @@
+.container > section {
+    margin-bottom: 4rem;
+}
+
+.title, .subtitle, .section_title {
+    margin: 0;
+}
+
+.section_title {
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin-bottom: 0.4rem;
+    font-size: 2.2rem;
+}
+.subtitle {  
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.symbols {
+    display: flex; 
+    flex-direction: column;
+    gap: 2em;
+}
+
+.flag {   
+    display: block;
+    height: 100%;
+    border-radius: var(--border-radius);
+    object-fit: cover;    
+}
+
+.coatOfArms {
+    display: block;
+    height: 200px;
+    object-fit: contain;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list_item {
+    position: relative;
+    height: 100%;
+    padding: var(--card-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-card-bg);
+    box-shadow: var(--color-shadow);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.list_title {
+    font-weight: 600;
+}
+
+.list_caption {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    opacity: 0.5;
+}
+
+.list_icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 8px;
+    font-size: 5rem;
+    opacity: 0.1;
+}
+
+
+@media (min-width: 576px) {
+    .symbols {
+        display: flex;
+        flex-direction: row;
+        height: 160px;
+    }
+    .coatOfArms {
+        margin: 0 auto;
+        height: 100%;
+    }
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .symbols {
+        height: 220px;
+    }
+    .list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .symbols {
+        display: flex;
+        height: 300px;
+    }
+}
+

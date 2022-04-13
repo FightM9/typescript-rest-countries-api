@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .aside_left {
+        grid-template-columns: 260px 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .aside_right {
+        grid-template-columns: 1fr 260px; 
+    }
+}
