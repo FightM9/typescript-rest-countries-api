@@ -24,8 +24,8 @@ The web application helps you find general background information about countrie
 
 ## Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/FightM9/typescript-rest-countries-api
+- Live Site URL:  https://typescript-rest-countries-api.netlify.app/
 
 ## Process
 
@@ -38,6 +38,7 @@ The web application helps you find general background information about countrie
 - Mobile-first workflow
 - [Typescript](https://www.typescriptlang.org/) - Syntactical superset of JavaScript
 - [React](https://reactjs.org/) – JS library
+- [React Router v6](https://reactrouter.com/) – for page routing
 - [React Select](https://react-select.com/) – Select Input control
 - [React Icons](https://react-icons.github.io/react-icons/) – Icons library
 - [Redux Toolkit](https://redux-toolkit.js.org/)  – A predictable state container for JavaScript applications
