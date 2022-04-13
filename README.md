@@ -1,6 +1,6 @@
 # REST Countries API with color theme switcher 
 
-Mobile First App, using Typescript, Redux Toolkit and CSS Module
+The web application helps you find general background information about countries: flag, area, population, capital, language, land borders and etc.
 
 ## Features
 
