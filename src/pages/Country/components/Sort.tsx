@@ -11,7 +11,7 @@ import {
   SortOptionEnum,
   SortOrderEnum,
   ViewModesEnums,
-} from '../../../store/reducer/CountriesSlice';
+} from '../../../store/reducer/CountrySlice';
 import styles from './Sort.module.css';
 
 const SORT = [

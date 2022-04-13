@@ -1,5 +1,5 @@
 import { useAppSelector } from '../../hooks/redux'; 
-import { ViewModesEnums } from '../../store/reducer/CountriesSlice';
+import { ViewModesEnums } from '../../store/reducer/CountrySlice';
 import { MdPeople, MdOutlineZoomOutMap } from 'react-icons/md';
 import { ICountry } from '../../shared/types/ICountry';
 import styles from './CountryCard.module.css';

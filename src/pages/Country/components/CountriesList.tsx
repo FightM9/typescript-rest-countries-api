@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useAppSelector } from '../../../hooks/redux';
 import CountryCard from '../../../components/Cards/CountryCard';
-import { ViewModesEnums } from '../../../store/reducer/CountriesSlice';
+import { ViewModesEnums } from '../../../store/reducer/CountrySlice';
 import styles from './CountryList.module.css';
 
 export default function CountriesList() {

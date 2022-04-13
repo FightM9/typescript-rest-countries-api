@@ -79,7 +79,7 @@ const initialState = {
   error: ''
 } as CountriesState;
 
-export const countriesSlice = createSlice({
+export const countrySlice = createSlice({
   name: 'countries',
   initialState,
   reducers: {
@@ -221,5 +221,5 @@ export const {
   setSortOrder,
   setSortOption,
   setViewMode,
-} = countriesSlice.actions;
-export default countriesSlice.reducer;
+} = countrySlice.actions;
+export default countrySlice.reducer;

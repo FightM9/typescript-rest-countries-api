@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../../hooks/redux';
 import CustomSelect from '../../../components/Controls/CustomSelect';
 import SearchInput from '../../../components/Controls/SearchInput';
-import { resetFilter, setArea, setFilter, setPopulation,setRegion, setSearch, setSort } from '../../../store/reducer/CountriesSlice';
+import { resetFilter, setArea, setFilter, setPopulation,setRegion, setSearch, setSort } from '../../../store/reducer/CountrySlice';
 import { getOptionByMinMaxValue, getOptionByValue} from '../../../shared/helper';
 import styles from './Filter.module.css';
 
